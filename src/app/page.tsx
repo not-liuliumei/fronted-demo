@@ -1,6 +1,3 @@
-
 export default function Page() {
-  return (
-      <h1>fronted demo</h1>
-  );
+  return <h1>fronted demo</h1>;
 }
