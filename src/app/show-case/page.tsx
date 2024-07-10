@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import { CaseCard } from "@/components/CaseCard/CaseCard";
 
 export const metadata: Metadata = {
   title: "Fronted Demo | Show Cases",
@@ -10,7 +10,11 @@ export default function Page() {
     <div>
       <h1>show case</h1>
       <div>
-        <Link href="/show-case/grow-input">grow input</Link>
+        <CaseCard
+          route={"/show-case/grow-input"}
+          title={"Grow Input"}
+          description={"A Input which can grow itself"}
+        />
       </div>
     </div>
   );

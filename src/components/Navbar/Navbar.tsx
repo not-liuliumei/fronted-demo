@@ -5,7 +5,7 @@ import "./index.css";
 
 export const Navbar = () => {
   return (
-    <div className="root-navbar">
+    <div className="navbar">
       <NavbarLink route={"/"} linkName={"Home"} />
       <NavbarLink route={"/show-case"} linkName={"Show Cases"} />
     </div>

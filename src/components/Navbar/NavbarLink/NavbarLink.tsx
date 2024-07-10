@@ -9,8 +9,8 @@ export const NavbarLink = ({
   linkName: string;
 }) => {
   const pathName = usePathname();
-  const className = `root-navbar-link${
-    pathName === route ? " root-navbar-link__active" : ""
+  const className = `navbar-link${
+    pathName === route ? " navbar-link__active" : ""
   }`;
 
   return (
