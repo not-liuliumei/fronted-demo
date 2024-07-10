@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Navbar } from "@/components/Navbar/Navbar";
+import "./index.css";
 
 export const metadata: Metadata = {
   title: "Fronted Demo",
@@ -14,12 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div>
-          nav bar
-          <Link href="/show-case">show-case</Link>
-          <Link href="/">Home</Link>
+        <div className="root-container">
+          <Navbar />
+          <div>{children}</div>
         </div>
-        <main>{children}</main>
       </body>
     </html>
   );
