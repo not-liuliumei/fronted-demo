@@ -1,0 +1,31 @@
+.grow-input-wrapper {
+  display: grid;
+  width: 200px;
+  max-width: 200px;
+  position: relative;
+}
+
+.grow-input-wrapper::after,
+.grow-input {
+  width: 200px;
+  padding: 0 8px;
+  margin: 0;
+  line-height: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.grow-input {
+  height: 100%;
+  resize: none;
+  overflow: hidden;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.grow-input-wrapper::after {
+  content: attr(data-inputvalue) " ";
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+  visibility: hidden;
+  grid-area: 1 / 1 / 2 / 2;
+}
